@@ -41,7 +41,7 @@ def callback(request):
                     func.setLang(event, 'ja', sound, userid)
 
                 elif mtext == '@其他語文':
-                    func.showElselang(event)  
+                    func.setElselang(event)  
 
                 elif mtext == '@顯示設定':
                     func.showConfig(event, lang, sound)
