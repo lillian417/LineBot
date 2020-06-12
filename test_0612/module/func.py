@@ -115,10 +115,10 @@ def sendTranslate(event, lang, sound, mtext):
                     duration=20000
                 ),
             ]
-            else:
-                message = TextSendMessage(
-                    text = translation
-                )
+        else:
+            message = TextSendMessage(
+                text = translation
+            )
         line_bot_api.reply_message(event.reply_token,message)
     except:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發生錯誤！'))

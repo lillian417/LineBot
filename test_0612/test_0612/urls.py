@@ -19,6 +19,6 @@ from django.conf.urls import url
 from api_0612 import views
 
 urlpatterns = [
-    url('^collback', views.callback),
+    url('^callback', views.callback),
     path('admin/', admin.site.urls),
 ]
